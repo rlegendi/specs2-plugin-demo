@@ -19,7 +19,7 @@ The required configuration is:
    Note that there is no experience using this plugin with Juno at the moment. Would be great to hear any comments though! ;-)
 1. Clone the repository:
    
-	$ ...
+	$ git clone https://github.com/rlegendi/specs2-plugin-demo.git
    
 1. In Eclipse, click *Help* --> *Install New Software*
    1. Click *Add*
@@ -40,10 +40,10 @@ Please file an issue here:
 
 https://github.com/rlegendi/specs2-runner/issues
 
-An important help for the investigation would be your current configuration and the content of the log files. You can find them under Help --> About Eclipse --> Installation Details --> Configuration (there is also a button for *View Error Log*).
+An important help for the investigation would be your current configuration and the content of the log files. You can find them under *Help --> About Eclipse --> Installation Details --> Configuration* (there is also a button for *View Error Log*).
 
 ## Notes ##
-scalatest plugin built by:
+The scalatest plugin was built by:
 
 	$ mvn clean install -P scala-ide-master-scala-2.9
 
