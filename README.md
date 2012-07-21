@@ -26,15 +26,19 @@ The required configuration is:
    1. Write *scala-ide* into the *Name* field
    1. Click *Local*
    1. Browse the *scala-ide/site* directory of the cloned project
-   1. Install the plugin (*)
+   1. Install the plugin (+) (++)
    1. Repeat these steps for the *scalatest* and *specs2* plugins in this order.
 1. Done!
 
-(*) After the installation, Eclipse asks if it should be restarted. You can safely install all three plug-ins before restarting it. Also, Eclipse 3.7.2 tend to crash during the restart after installing a new plugin under Win x64, don't be frightened :-) Just start it again by double-clicking on its icon, everything will be fine.
+(+) Some plugins offer a *"Source"* feature, which contains only the source code of the plug-in. These are not essential, you need them only if you would like to help us debug the code. Otherwise, you can omit them. 
+
+(++) After the installation, Eclipse asks if it should be restarted. You can safely install all three plug-ins before restarting it. Also, Eclipse 3.7.2 tend to crash during the restart after installing a new plugin under Win x64, don't be frightened :-) Just start it again by double-clicking on its icon, everything will be fine.
+
+
 
 ## Using the plugin ##
 
-Switch to the Scala perspective, and create a simple Scala project. Add all the libraries under the `lib` directory to the project as an external JAR. Do this by right-clicking on the project, select Configure Build Path... --> Libraries --> External JARS (select multiple ones by using the shift or control keys).
+Switch to the Scala perspective, and create a simple Scala project. Add all the libraries under the `lib` directory to the project as an external JAR. Do this by right-clicking on the project, select *Build Path --> Add External Archives...* (select multiple ones by using the shift or control keys).
 
 After all the dependencies are added to the project, you can use the plugin!
 
