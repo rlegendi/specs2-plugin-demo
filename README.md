@@ -10,8 +10,10 @@ For the list of features, please check out the [project site][projectSite].
 The required configuration is:
 
 * JRE 7 (I used 1.7.0u2). It is enough to use it only for running Eclipse, just set it with the `-vm` switch within the *eclipse.ini* file [as described here][eclipseIni])
-* My master Scala IDE fork (2.1.x) with stable Scala (2.9.2). Some features won't work with the the original one (e.g., the new wizards)
-* My ScalaTest plugin fork. Note that it is not the latest one.
+* My master Scala IDE fork (2.1.x) with stable Scala (2.9.2). Some features won't work with the the original one (e.g., the new wizards) (+)
+* My ScalaTest plugin fork. Note that it is not the latest one. (+)
+
+(+) Steps to install these plugins are detailed below.
 
 ## Steps to install the plugin ##
 
@@ -19,7 +21,7 @@ The required configuration is:
    Note that there is no experience using this plugin with Juno at the moment. Would be great to hear any comments though! ;-)
 1. Clone the repository:
    
-	$ git clone https://github.com/rlegendi/specs2-plugin-demo.git
+		$ git clone https://github.com/rlegendi/specs2-plugin-demo.git
    
 1. In Eclipse, click *Help* --> *Install New Software*
    1. Click *Add*
