@@ -32,6 +32,14 @@ The required configuration is:
 
 (*) After the installation, Eclipse asks if it should be restarted. You can safely install all three plug-ins before restarting it. Also, Eclipse 3.7.2 tend to crash during the restart after installing a new plugin under Win x64, don't be frightened :-) Just start it again by double-clicking on its icon, everything will be fine.
 
+## Using the plugin ##
+
+Switch to the Scala perspective, and create a simple Scala project. Add all the libraries under the `lib` directory to the project as an external JAR. Do this by right-clicking on the project, select Configure Build Path... --> Libraries --> External JARS (select multiple ones by using the shift or control keys).
+
+After all the dependencies are added to the project, you can use the plugin!
+
+*(This step is required because some of the work hasn't been pushed to any public Maven repositories, so they are unavailable for Sbt/Maven/Ivy projects.)*
+
 ## Issue reporting ##
 
 In case you have any problems, feature requests, anything, I would be more than glad to hear them!
