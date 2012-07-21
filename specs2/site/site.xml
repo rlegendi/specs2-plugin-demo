@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.scala-ide.sdt.specs2.feature_2.1.0.local-2_09-201207211117-d67a153.jar" id="org.scala-ide.sdt.specs2.feature" version="2.1.0.local-2_09-201207211117-d67a153">
+      <category name="sdt.scalatest.specs2"/>
+   </feature>
+   <category-def name="sdt.scalatest.specs2" label="Specs2 ScalaTest extension for the Scala IDE"/>
+</site>
