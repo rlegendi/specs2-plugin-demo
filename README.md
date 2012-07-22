@@ -9,7 +9,7 @@ For the list of features, please check out the [project site][projectSite].
 
 The required configuration is:
 
-* JRE 7 (I used 1.7.0u2). It is enough to use it only for running Eclipse, just set it with the `-vm` switch within the *eclipse.ini* file [as described here][eclipseIni])
+* JRE 1.5+. It is enough to use it only for running Eclipse, just set it with the `-vm` switch within the *eclipse.ini* file [as described here][eclipseIni])
 * My master Scala IDE fork (2.1.x) with stable Scala (2.9.2). Some features won't work with the the original one (e.g., the new wizards) (+)
 * My ScalaTest plugin fork. Note that it is not the latest one. (+)
 
@@ -36,8 +36,6 @@ The required configuration is:
 
 (++) After the installation, Eclipse asks if it should be restarted. You can safely install all three plug-ins before restarting it. Also, Eclipse 3.7.2 tend to crash during the restart after installing a new plugin under Win x64, don't be frightened :-) Just start it again by double-clicking on its icon, everything will be fine.
 
-
-
 ## Using the plugin ##
 
 Switch to the Scala perspective, and create a simple Scala project. Add all the libraries under the `lib` directory to the project as an external JAR. Do this by right-clicking on the project, select *Build Path --> Add External Archives...* (select multiple ones by using the shift or control keys).
@@ -55,6 +53,12 @@ Please file an issue here:
 https://github.com/rlegendi/specs2-runner/issues
 
 An important help for the investigation would be your current configuration and the content of the log files. You can find them under *Help --> About Eclipse --> Installation Details --> Configuration* (there is also a button for *View Error Log*).
+
+## Acknowledgement ##
+
+I've got great feedbacks, thanks for the help and work, guys!
+
+* [Guillaume Massé](https://github.com/MasseGuillaume) for testing the plugin under MacOS X with JDK 6.0
 
 ## Notes ##
 The scalatest plugin was built by:
