@@ -46,13 +46,12 @@ After all the dependencies are added to the project, you can use the plugin!
 
 ### About the Dependencies... ###
 
-Basically the dependencies you have to add to your project are the ScalaTest and Specs2 libraries (and their transitive dependencies).
+Basically the dependencies you have to add to your project are the ScalaTest and Specs2 libraries (with their transitive dependencies).
+However, there are three additional libraries there: the i) `scalatest-finders`, ii) `spec-runner` and iii) `specs2-runner` Jar files.
 
-However, there are three additional libraries: the i) `scalatest-finders`, ii) `spec-runner` and iii) `specs2-runner` Jar files.
+Unfortunately, these libraries are not available from any public repos at the moment. The binary of i) and ii) must be built directly from the ScalaTest project SVN repository. See [this thread for i)][testFinders] and [this pull request for ii)][specRunner].
 
-Unfortunately, these libraries are not available from any public repos at the moment. The Jar of i) and ii) must be built directly from the ScalaTest project SVN repository. See [this thread for i)][testFinders] and [this pull request for ii)][specRunner].
-
-If you would like to build iii), you have to put i) and ii) into your local repository. You can [find the project here][specs2Runner] which you can build with Sbt.
+You can [find the project for iii) here][specs2Runner] which you can build with Sbt. If you would like to build it on your own, you have to put i) and ii) into your local repository (detailed description can be found at the linked project page).
 
 ## Issue reporting ##
 
