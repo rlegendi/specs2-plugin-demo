@@ -44,6 +44,16 @@ After all the dependencies are added to the project, you can use the plugin!
 
 *(This step is required because some of the work hasn't been pushed to any public Maven repositories, so they are unavailable for Sbt/Maven/Ivy projects.)*
 
+### About the Dependencies... ###
+
+Basically the dependencies you have to add to your project are the ScalaTest and Specs2 libraries (and their transitive dependencies).
+
+However, there are three additional libraries: the i) `scalatest-finders`, ii) `spec-runner` and iii) `specs2-runner` Jar files.
+
+Unfortunately, these libraries are not available from any public repos at the moment. The Jar of i) and ii) must be built directly from the ScalaTest project SVN repository. See [this thread for i)][testFinders] and [this pull request for ii)][specRunner].
+
+If you would like to build iii), you have to put i) and ii) into your local repository. You can [find the project here][specs2Runner] which you can build with Sbt.
+
 ## Issue reporting ##
 
 In case you have any problems, feature requests, anything, I would be more than glad to hear them!
@@ -68,4 +78,7 @@ The scalatest plugin was built by:
   [projectSite]:    http://rlegendi.github.com/specs2-runner/
   [eclipseIni]:     http://wiki.eclipse.org/Eclipse.ini#Specifying_the_JVM
   [IndigoDownload]: http://www.eclipse.org/downloads/packages/release/indigo/sr2
+  [testFinders]:    https://groups.google.com/d/msg/scala-ide-dev/A-jWSJaotfQ/R4IpykP8ldYJ
+  [specRunner]:     https://github.com/scala-ide/scala-ide/pull/94
+  [specs2Runner]:   https://github.com/rlegendi/specs2-runner
 
